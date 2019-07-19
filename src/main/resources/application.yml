@@ -5,9 +5,9 @@ server:
   port: 8888
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.3.197
   client:
     service-url:
-      defaultZone: http://localhost:8888/eureka/
+      defaultZone: http://192.168.3.197:8888/eureka/
     fetch-registry: false
     register-with-eureka: false
