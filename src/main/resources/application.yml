@@ -1,16 +1,10 @@
+server:
+  port: 8761
 spring:
   application:
     name: eureka-server
     ##解决jvm使用的冲突，tomcat中不同的server 注册jmx必须使用不同的jvm
   jmx:
     default-domain: eureka-server
-server:
-  port: 8761
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    fetch-registry: false
-    register-with-eureka: false
+  profiles:
+    active: dev
